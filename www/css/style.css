@@ -262,9 +262,20 @@ section.our-portfolio .our-portfolio-bottom .our-portfolio-bottom-right{
   width: 83.4%;
 }
 
-section.our-portfolio .our-portfolio-bottom .our-portfolio-bottom-right .tab-pane{
+section.our-portfolio .our-portfolio-bottom .our-portfolio-bottom-right .tab-pane .img-row{
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 970px;
+  /* justify-content: flex-end; */
+  /* align-content: flex-start; */
+  /* align-items: flex-start; */
+}
+
+section.our-portfolio .our-portfolio-bottom .our-portfolio-bottom-right .tab-pane .img-row img{
+  width: 30%;
+  margin: 15px;
 }
 
 
