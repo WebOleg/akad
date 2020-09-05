@@ -1,0 +1,228 @@
+/* standard class */
+
+.standard-title{
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   font-size: 30px;
+   color: #60606e;
+}
+
+.standard-btn{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 20px 40px;
+  background-color: #7beec7;
+}
+
+.btn.white{
+  background-color: #ffffff;
+  color: #7beec7;
+}
+
+.text-uppercase{
+  text-transform: uppercase; 
+}
+
+span.green-bg{
+  position: relative;
+  z-index: 1;
+}
+
+span.green-bg::before{
+  position: absolute;
+  background-color: #7beec7;
+  content: '';
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+  top: 50%;
+  height: 50%;
+}
+
+/* standard class end */
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #60606e;
+}
+
+/* header */
+
+header{
+  padding-top: 40px;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+header span{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+/* header end */
+
+/* main */
+
+/* section inner */
+
+section#inner{
+  background-image:  url("../img/inner-bgc.png"); 
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+#inner .inner-top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
+#inner .inner-span-green{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 10px 15px;
+  background-color: #7beec7; 
+}
+
+#inner .inner-top h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  padding: 35px 25px;
+  border: 10px solid;
+  border-color: #60606e;
+}
+
+#inner .inner-top p{
+  margin-top: 30px;
+  text-align: center;
+  width: 540px;
+  line-height: 24px
+}
+
+#inner .inner-bottom .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+#inner .inner-bottom .inner-bottom-left img{
+  position: absolute;
+  bottom: -30px;
+}
+
+#inner .inner-bottom .inner-bottom-right{
+  width: 50%;
+  margin-top: 155px;
+} 
+
+#inner .inner-bottom .inner-bottom-right p{
+  margin-top: 15px;
+  width: 545px;
+  line-height: 30px;
+}
+
+#inner .inner-bottom .inner-bottom-right-btn{
+  margin-top: 38px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#inner .inner-bottom .inner-bottom-right-btn a{
+  position: absolute;
+  bottom: -24px;
+}
+
+#inner .inner-bottom .inner-bottom-right-btn a:hover{
+  color: #7beec7;
+  background-color: #60606e;
+}
+
+/* section inner end*/
+
+/* section why choose us */
+
+section.why-choose-us{
+  display: flex;
+  flex-direction: column;
+  padding: 140px 0;
+}
+
+section.why-choose-us .why-choose-us-top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.why-choose-us .why-choose-us-top p{
+  width: 725px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+section.why-choose-us .why-choose-us-bottom{
+  display: flex;
+}
+
+section.why-choose-us .why-choose-us-bottom .why-choose-us-bottom-left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+}
+
+section.why-choose-us .why-choose-us-bottom-left-top{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+section.why-choose-us .why-choose-us-card{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+section.why-choose-us .why-choose-us-bottom .why-choose-us-bottom-left .why-choose-us-bottom-left-top .why-choose-us-card span{
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #60606e;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+section.why-choose-us .why-choose-use-information{
+  display: flex;
+  flex-direction: column;
+}
+
+section.why-choose-us .why-choose-us-bottom .why-choose-us-bottom-left .why-choose-us-bottom-left-top .why-choose-us-card .why-choose-use-information a{
+  font-size: 14px;
+  color: #999999;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+section.why-choose-us .why-choose-us-bottom .why-choose-us-bottom-left .why-choose-us-bottom-left-top .why-choose-us-card .why-choose-use-information a:hover{
+  color: #60606e;
+  box-shadow: 1px 7px 5px #7beec7; 
+}
+
+section.why-choose-us .why-choose-us-bottom .why-choose-us-bottom-right{
+  width: 50%;
+  padding-left: 90px;
+}
+
+/* section why choose us end */
+
+/* main end */
