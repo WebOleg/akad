@@ -1,3 +1,7 @@
+* {
+box-sizing: border-box !important;
+}
+
 /* standard class */
 
 .standard-title{
@@ -19,6 +23,7 @@
 .btn.white{
   background-color: #ffffff;
   color: #7beec7;
+  border-radius: 0;
 }
 
 .text-uppercase{
@@ -225,6 +230,11 @@ section.why-choose-us .why-choose-us-bottom-right img{
   width: 100%;
 }
 
+section.why-choose-us i{
+  font-size: 36px;
+  color: #60606e;
+}
+
 /* section why choose us end */
 
 /* section our portfolio */
@@ -245,8 +255,31 @@ section.our-portfolio .our-portfolio-top span{
   margin-bottom: 20px;
 }
 
+section.our-portfolio .our-portfolio-top p{
+  margin-bottom: 123px;
+}
+
+section.our-portfolio .our-portfolio-bottom span{
+  margin-bottom: 25px;
+}
+
 section.our-portfolio .our-portfolio-bottom{
   display: flex;
+}
+
+section.our-portfolio .our-portfolio-bottom li a{
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #60606e;
+  margin-top: 25px;
+}
+
+section.our-portfolio .our-portfolio-bottom li a.active{
+  padding: 0;
+  display: inline-block;
+  padding: 7px 20px;
+  background-color: #7beec7;
 }
 
 section.our-portfolio .our-portfolio-bottom .our-portfolio-bottom-left{
@@ -280,5 +313,35 @@ section.our-portfolio .our-portfolio-bottom .our-portfolio-bottom-right .tab-pan
 
 
 /* section our portfolio end */
+
+/* YOU THINK WE'RE COOL ? */
+
+section.you-think-we-cool{
+  padding: 50px 0;
+  background-color: #7beec7;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.you-think-we-cool .you-think-we-cool-left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+section.you-think-we-cool .you-think-we-cool-left span{
+  line-height: 48px;
+  color: #ffffff;
+}
+
+section.you-think-we-cool .you-think-we-cool-left .you-think-we-cool-left-btn{
+  margin-top: 15px;
+}
+
+section.you-think-we-cool .you-think-we-cool-right{
+  width: 50%;
+}
+/* YOU THINK WE'RE COOL end */
 
 /* main end */
