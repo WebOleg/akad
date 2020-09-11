@@ -1,14 +1,14 @@
 * {
-box-sizing: border-box !important;
+  box-sizing: border-box !important;
 }
 
 /* standard class */
 
 .standard-title{
-   font-family: 'Montserrat', sans-serif;
-   font-weight: 700;
-   font-size: 30px;
-   color: #60606e;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #60606e;
 }
 
 .standard-btn{
@@ -265,6 +265,7 @@ section.our-portfolio .our-portfolio-bottom span{
 
 section.our-portfolio .our-portfolio-bottom{
   display: flex;
+
 }
 
 section.our-portfolio .our-portfolio-bottom li a{
@@ -273,6 +274,7 @@ section.our-portfolio .our-portfolio-bottom li a{
   font-weight: 700;
   color: #60606e;
   margin-top: 25px;
+  text-transform: uppercase;
 }
 
 section.our-portfolio .our-portfolio-bottom li a.active{
@@ -293,18 +295,28 @@ section.our-portfolio .our-portfolio-bottom .our-portfolio-bottom-left ul{
 
 section.our-portfolio .our-portfolio-bottom .our-portfolio-bottom-right{
   width: 83.4%;
+  margin-top: -15px;
 }
 
 section.our-portfolio .our-portfolio-bottom .our-portfolio-bottom-right .tab-pane .img-row{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: flex-end;
-  height: 970px;
-  /* justify-content: flex-end; */
-  /* align-content: flex-start; */
-  /* align-items: flex-start; */
+  /* height: 970px; */
+  align-content: flex-start;
 }
+
+/* разные высоты для разных пунктов */
+section.our-portfolio .our-portfolio-bottom .our-portfolio-bottom-right #all.tab-pane .img-row{
+  height: 970px;
+}
+section.our-portfolio .our-portfolio-bottom .our-portfolio-bottom-right #webdesign.tab-pane .img-row{
+  height: 800px;
+}
+
+/* дописать */
+
 
 section.our-portfolio .our-portfolio-bottom .our-portfolio-bottom-right .tab-pane .img-row img{
   width: 30%;
@@ -319,8 +331,11 @@ section.our-portfolio .our-portfolio-bottom .our-portfolio-bottom-right .tab-pan
 section.you-think-we-cool{
   padding: 50px 0;
   background-color: #7beec7;
+}
+
+section.you-think-we-cool .container{
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 section.you-think-we-cool .you-think-we-cool-left{
