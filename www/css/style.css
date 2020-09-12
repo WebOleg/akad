@@ -61,12 +61,15 @@ body{
 
 header{
   padding-top: 40px;
+  padding-bottom: 40px;
   position: fixed;
   left: 0;
   right: 0;
+  background-color: rgba(255, 255, 255, .0);
 }
 
 header .logo{
+  z-index: 99;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: inherit;
@@ -88,6 +91,10 @@ header .container{
 .navbar-light .navbar-toggler:focus{
   outline: none;
   outline-color: #7beec7; 
+}
+
+header nav button{
+  z-index: 99;
 }
 
 header nav button div{
@@ -112,10 +119,14 @@ header nav button div + div{
 }
 
 header .navbar-collapse{
+  text-align: center;
+  display: flex;
+  justify-content: center;
   position: absolute;
-  left: 50%;
+  left: 0;
+  right: 0; 
   top: 50%;
-  transform: translate(-50%, -50%) 
+  transform: translate(0, -50%);
 }
 
 header .navbar-collapse .navbar-nav{
@@ -126,7 +137,7 @@ header .navbar-collapse .navbar-nav{
 }
 
 header .navbar-collapse .navbar-nav li+li{
-  margin-left: 135px;
+  margin-left: 50px;
   
 }
 
@@ -457,11 +468,11 @@ section.you-think-we-cool .you-think-we-cool-right p{
 }
 
 section.you-think-we-cool .you-think-we-cool-right .form-group{
-  width: 70%
+  width: 70%;
+  margin-bottom: 0;
 }
 
 section.you-think-we-cool .you-think-we-cool-right button{
-  height: 100%;
   width: 30%
 }
 
