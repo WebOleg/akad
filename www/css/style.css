@@ -47,6 +47,8 @@ span.green-bg::before{
   height: 50%;
 }
 
+
+
 /* standard class end */
 
 body{
@@ -67,7 +69,80 @@ header{
 header .logo{
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  color: inherit;
 }
+
+header .container{
+  position: relative;
+}
+
+.navbar-light .navbar-toggler{
+  border: none;
+  padding: 10px 5px;
+}
+
+.navbar-light .navbar-toggler[aria-expanded="true"] div{
+  background-color: #7beec7;
+}
+
+.navbar-light .navbar-toggler:focus{
+  outline: none;
+  outline-color: #7beec7; 
+}
+
+header nav button div{
+  height: 1px;
+  background-color: #60606e;
+}
+
+header nav button div:nth-child(1){
+  width: 31px;
+}
+
+header nav button div:nth-child(2){
+  width: 15px;
+}
+
+header nav button div:nth-child(3){
+  width: 23px;
+}
+
+header nav button div + div{
+  margin-top: 6px;
+}
+
+header .navbar-collapse{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) 
+}
+
+header .navbar-collapse .navbar-nav{
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+header .navbar-collapse .navbar-nav li+li{
+  margin-left: 135px;
+  
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+  color: #7beec7;
+  text-transform: uppercase; 
+}
+
+.navbar-light .navbar-nav .nav-link{
+  border-bottom: 1px solid;
+  border-color: rgba(0, 0, 0, 0.0)
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+  border-color: #7beec7;
+} 
 
 /* header end */
 
@@ -354,9 +429,114 @@ section.you-think-we-cool .you-think-we-cool-left .you-think-we-cool-left-btn{
   margin-top: 15px;
 }
 
+section.you-think-we-cool .you-think-we-cool-left .you-think-we-cool-left-btn .btn:hover{
+  color: #7beec7;
+  background-color: #60606e;
+  border-color: #60606e;
+}
+
 section.you-think-we-cool .you-think-we-cool-right{
   width: 50%;
+  background-color: #ffffff;
+  padding: 20px;
 }
-/* YOU THINK WE'RE COOL end */
+
+section.you-think-we-cool .you-think-we-cool-right span{
+  width: 337px;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 36px;
+  color: #60606e;
+}
+
+section.you-think-we-cool .you-think-we-cool-right p{
+  margin-bottom: 30px;
+  line-height: 24px;
+  margin-top: 7px;
+}
+
+section.you-think-we-cool .you-think-we-cool-right .form-group{
+  width: 70%
+}
+
+section.you-think-we-cool .you-think-we-cool-right button{
+  height: 100%;
+  width: 30%
+}
+
+section.you-think-we-cool .you-think-we-cool-right .btn-primary{
+   background-color: #7beec7;
+   border-color: #7beec7;
+   border-radius: 0;
+}
+
+section.you-think-we-cool .you-think-we-cool-right .btn-primary:hover{
+  color: #7beec7;
+  background-color: #60606e;
+  border-color: #60606e;
+}
+
+section.you-think-we-cool .you-think-we-cool-right .form-row{
+  display: flex;
+  width: 100%
+}
+
+section.you-think-we-cool .you-think-we-cool-right .form-control{
+  border-radius: 0;
+}
+
+section.you-think-we-cool .you-think-we-cool-right .form-control:focus{
+  box-shadow: none;
+  border-color: #7beec7; 
+}
+
+.btn-primary:focus{
+  box-shadow: none;
+}
+
+.btn:focus{
+  box-shadow: none;
+}
+
+
+
+
+/* YOU THINK WE'RE COOL end
 
 /* main end */
+footer{
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+
+footer .footer-top .footer-nav a{
+  color: #9a9a9a;
+  line-height: 48px;
+  font-size: 14px;
+}
+
+footer .footer-top .footer-nav a:hover{
+  color: #60606e;
+  box-shadow: 0px 3px 1px #7beec7;
+}
+
+footer .footer-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-top span{
+  color: #9a9a9a;
+  font-size: 14px;
+  line-height: 48px;
+}
+
+footer .footer-top .footer-nav span{
+  margin: 0 10px;
+}
+
+/* footer */
+
+/* footer end */
