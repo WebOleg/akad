@@ -47,7 +47,29 @@ span.green-bg::before{
   height: 50%;
 }
 
+span.green-bg-i{
+  position: relative;
+  z-index: 1;
+}
 
+span.green-bg-i::before{
+  position: absolute;
+  background-color: #7beec7;
+  content: '';
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+  top: 64%;
+  height: 33%;
+  width: 70%;
+}
+
+.inner-standard{
+  background-image: url('../img/inner-standard.png');
+  background-size: cover;
+  height: 500px
+}
 
 /* standard class end */
 
@@ -65,7 +87,15 @@ header{
   position: fixed;
   left: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, .0);
+  background-color: rgba(123, 238, 199, .0);
+  transition: all 2s;
+  z-index: 98;
+}
+
+header.sticky{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(123, 238, 199, 1);
 }
 
 header .logo{
@@ -88,6 +118,10 @@ header .container{
   background-color: #7beec7;
 }
 
+header.sticky .navbar-light .navbar-toggler[aria-expanded="true"] div{
+  background-color: #ffffff;
+}
+
 .navbar-light .navbar-toggler:focus{
   outline: none;
   outline-color: #7beec7; 
@@ -98,7 +132,7 @@ header nav button{
 }
 
 header nav button div{
-  height: 1px;
+  height: 2px;
   background-color: #60606e;
 }
 
@@ -141,9 +175,13 @@ header .navbar-collapse .navbar-nav li+li{
   
 }
 
-.navbar-light .navbar-nav .active>.nav-link{
+header .navbar-nav .active>.nav-link{
   color: #7beec7;
   text-transform: uppercase; 
+}
+
+header.sticky .navbar-nav .active>.nav-link{
+  color: #ffffff;
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -151,9 +189,13 @@ header .navbar-collapse .navbar-nav li+li{
   border-color: rgba(0, 0, 0, 0.0)
 }
 
-.navbar-light .navbar-nav .nav-link:hover{
+header .navbar-nav .nav-link:hover{
   border-color: #7beec7;
 } 
+
+header.sticky .navbar-nav .nav-link:hover{
+  border-color: #ffffff;
+}
 
 /* header end */
 
@@ -551,3 +593,150 @@ footer .footer-top .footer-nav span{
 /* footer */
 
 /* footer end */
+
+/* services page */
+
+/* inner-standard */
+
+/* inner standard end */
+
+/* services-reason */
+
+.services-reason{
+  padding: 153px 0;
+}
+
+.services-reason .container{
+  display: flex;
+}
+
+.services-reason .services-reason-card{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-reason .services-reason-card span i{
+  font-size: 60px;
+  color: #60606e;
+}
+
+.services-reason .services-reason-card span{
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #60606e;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.services-reason .services-reason-card p{
+  text-align: center;
+  line-height: 30px;
+}
+
+/* services-reason */
+
+/* pricing plans */
+
+/* pricing plans end */
+
+.prising-plans{
+  padding-bottom: 120px;
+}
+
+.prising-plans .container h2{
+  text-align: center;
+}
+
+.prising-plans .container  p{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.prising-plans .container .prising-plans-last-p{
+  margin-bottom: 100px;
+  margin-top: 0;
+} 
+
+.prising-plans-card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  align-items: start;
+  transition: all 8s;
+}
+
+.prising-plans-card:hover{
+  transform: scale(1,1.2);
+  box-shadow: 0px 0px 20px rgba(123, 238, 199, .8);
+}
+
+.border-prising-plans-card{
+  border-top: 5px solid #7beec7;
+  width: 360px;
+}
+
+.prising-plans-card .border-prising-plans-card:after{
+  content: "";
+  position: absolute;
+  border-left: 5px solid transparent;
+  border-right: 0 solid blue;
+  border-top: 5px solid #7beec7;
+  right: 0;
+  /* top: -1px; */
+}
+
+.prising-plans .prising-plans-card .prising-plans-card-top{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.prising-plans .prising-plans-card .prising-plans-card-top .prising-plans-card-top-btn{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 10px 20px;
+  background-color: #7beec7;
+  width: 165px;
+}
+
+.prising-plans .prising-plans-card .prising-plans-card-top span{
+  margin-bottom: 15px;
+}
+
+.prising-plans .prising-plans-card .prising-plans-card-top .prising-plans-card-top-btn:hover{
+  color: #7beec7;
+  background-color: #60606e;
+  border-color: #60606e;
+}
+
+.prising-plans .prising-plans-card .prising-plans-card-middle{
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.prising-plans .prising-plans-card .prising-plans-card-middle i{
+  font-size: 14px;
+  background-color: #7beec7;
+  color: #ffffff;
+  margin-right: 8px;
+}
+
+.prising-plans .prising-plans-card .prising-plans-card-middle span + span{
+  margin-top: 20px;
+}
+
+.prising-plans .prising-plans-card .prising-plans-card-bottom a:hover{
+  color: #7beec7;
+  background-color: #60606e;
+  border-color: #60606e;
+}
+
+/* services page end */
