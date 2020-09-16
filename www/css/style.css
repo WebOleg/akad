@@ -795,9 +795,46 @@ section.blogs-feed .blog .post .social-information-post .post-comment i,.post-li
   margin-right: 5px;
 }
 
+section.blogs-feed .side-bar .search{
+  position: relative;
+}
+
+section.blogs-feed .side-bar .search input{
+  border-radius: 0;
+  border: 2px solid #ececec;
+  background-color: #ececec;
+  width: 100%;
+  padding: 18px 40px 15px 13px;
+  font-size: 12px;
+}
+
+section.blogs-feed .side-bar .search input:focus{
+  outline: none;
+  border-color: #7beec7;
+}
+
+section.blogs-feed .side-bar .search input:focus + button{
+  color: #7beec7;
+}
+
+section.blogs-feed .side-bar .search button{
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  font-size: 18px;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+section.blogs-feed .side-bar .search button:focus{
+  outline: none;
+}
 
 
 
 /* blog-feed end */
+
+
 
 /* blog page end*/
