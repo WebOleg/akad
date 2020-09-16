@@ -739,4 +739,65 @@ footer .footer-top .footer-nav span{
   border-color: #60606e;
 }
 
-/* services page end */
+/* services page end */\
+
+/* blog page */
+
+/* blog-feed */
+
+section.blogs-feed{
+  padding: 150px 0;
+}
+
+section.blogs-feed .blog{
+  display: flex;
+  flex-direction: column;
+}
+
+section.blogs-feed .blog .post img{
+  max-width: 100%;
+}
+
+section.blogs-feed .blog .post .social-information-post{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+section.blogs-feed .blog .post .social-information-post .post-date{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #7beec7;
+  margin-right: 10px;
+}
+
+section.blogs-feed .blog .post .social-information-post .post-comment,.post-like{
+  font-size: 14px;
+  color: #cccccc;
+  display: flex;
+  align-items: center;
+}
+
+section.blogs-feed .blog .post .social-information-post .post-like i{
+  color: #ea6a6a;
+}
+
+section.blogs-feed .blog .post .social-information-post span + span{
+  margin-left: 15px;
+}
+
+section.blogs-feed .blog .post .social-information-post .post-comment i,.post-like i{
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+
+
+
+/* blog-feed end */
+
+/* blog page end*/
