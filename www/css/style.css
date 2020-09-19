@@ -739,14 +739,14 @@ footer .footer-top .footer-nav span{
   border-color: #60606e;
 }
 
-/* services page end */\
+/* services page end */
 
 /* blog page */
 
 /* blog-feed */
 
-body > main > section.blogs-feed{
-  padding-top: 150px;
+section.blogs-feed{
+  padding-top: 15px;
 }
 
 section.blogs-feed .blog{
@@ -956,6 +956,7 @@ body > main > section.blogs-feed > div > div > div.col-lg-3.offset-1 > div.side-
 .tags-button{
   display: flex;
   flex-wrap: wrap;
+  padding: -5px;
 }
 
 .tags-button a{
@@ -965,6 +966,8 @@ body > main > section.blogs-feed > div > div > div.col-lg-3.offset-1 > div.side-
   color: #999999;
   padding: 10px;
   background-color: #e5e5e5;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
 .tags-button a:hover{
@@ -973,8 +976,7 @@ body > main > section.blogs-feed > div > div > div.col-lg-3.offset-1 > div.side-
 }
 
 .tags-button a + a{
-  margin-left: 5px;
-  margin-top: 5px;
+
 }
 
  .tags-text{
